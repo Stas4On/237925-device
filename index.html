@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Девайс</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<a href="#" class="logo logo-header">Device</a>
+			<div class="">
+				<form name="find" method="get" action="test.php">
+					<input type="text" placeholder="Поиск по сайту">
+					<input type="button" value="Найти">
+				</form>
+				<div class="header-function">
+					<a href="#" class="enter">Войти</a>
+					<a href="#" class="compare">Сравнить</a>
+					<a href="#" class="cart">Корзина</a>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li>Каталог товаров</li>
+					<li>Доставка</li>
+					<li>Гарантия</li>
+					<li>Контакты</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="drop-down-menu">
+			<ul>
+				<li><a href="#">Виртуальная реальность</a></li>
+				<li><a href="#">Моноподы для селфи</a></li>
+				<li><a href="#">Экшн-камеры</a></li>
+				<li><a href="#">Фитнес-браслеты</a></li>
+				<li><a href="#">Умные часы</a></li>
+				<li><a href="#">Квадрокоптеры</a></li>
+			</ul>
+		</section>
+		<main>
+			<section class="products-slider">
+				<input type="radio" id="btn-1" name="toggle" checked>
+				<input type="radio" id="btn-2" name="toggle">
+				<input type="radio" id="btn-3" name="toggle">
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
+					<label for="btn-3"></label>
+				</div>
+				<div class="first-slide">
+					<h2>Делай селфи, как Бен Стиллер!</h2>
+					<p>
+						Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+					</p>
+					<a href="#" class="btn">Подробнее</a>
+					<table>
+						<tr>
+							<th>8,5 м</th>
+							<th>5 кг</th>
+							<th>Карбон</th>
+						</tr>
+						<tr>
+							<td>Длина палки</td>
+							<td>Вес палки</td>
+							<td>Материал</td>
+						</tr>
+					</table>
+				</div>
+				<div class="second-slide">
+					<h2>Худеем правильно!</h2>
+					<p>
+						Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+					</p>
+					<a href="#" class="btn">Подробнее</a>
+					<table>
+						<tr>
+							<th>48 часов</th>
+						</tr>
+						<tr>
+							<td>Без подзарядки</td>
+						</tr>
+					</table>
+				</div>
+				<div class="third-slide">
+					<h2>Порхает как бабочка,жалит как пчела!</h2>
+					<p>
+						Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+					</p>
+					<a href="#" class="btn">Подробнее</a>
+					<table>
+						<tr>
+							<th>800 м</th>
+							<th>50 м</th>
+						</tr>
+						<tr>
+							<td>Дальность полета</td>
+							<td>Радиус поражения</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section class="popular">
+				<ul>
+					<li class="item virt-real"><a href="#">Виртуальная реальность</a></li>
+					<li class="item monopods"><a href="#">Моноподы для селфи</a></li>
+					<li class="item action-cam"><a href="#">Экшн-камеры</a></li>
+					<li class="item fit-brac"><a href="#">Фитнес-браслеты</a></li>
+					<li class="item smart-watch"><a href="#">Умные часы</a></li>
+					<li class="item quadrocopt"><a href="#">Квадрокоптеры</a></li>
+				</ul>
+			</section>
+			<section class="advantages">
+				<ul>
+					<li class="delivery">Доставка</li>
+					<li class="warranty">Гарантия</li>
+					<li class="credit">Кредит</li>
+				</ul>
+				<div class="advanteges-slider">
+					<h2>Доставка</h2>
+					<p>
+						Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+					</p>
+					<h2>Гарантия</h2>
+					<p>
+						Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+					</p>
+					<h2>Кредит</h2>
+					<p>
+						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+					</p>
+				</div>
+			</section>
+			<section class="logotypes">
+				<a href="#"><img src="http://placehold.it/150x100" alt="DJI"></a>
+				<a href="#"><img src="http://placehold.it/150x100" alt="SP Gadgets"></a>
+				<a href="#"><img src="http://placehold.it/150x100" alt="GoPro"></a>
+				<a href="#"><img src="http://placehold.it/150x100" alt="VIVE"></a>
+			</section>
+			<section class="info">
+				<h2>О нас</h2>
+				<p>
+					Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+				</p>
+				<p>
+					Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+				</p>
+				<a href="#" class="btn">Подробнее о нас</a>
+			</section>
+			<section class="contact">
+				<h2>Контакты</h2>
+				<p>
+					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+				</p>
+				<a href="#" class="btn">Напишите нам</a>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<a href="#" class="logo logo-footer">Device</a>
+			<div class="footer-function">
+				<a href="#" class="enter">Войти</a>
+				<a href="#" class="compare">Сравнить</a>
+				<a href="#" class="cart">Корзина</a>
+			</div>
+			<p>г. Москва, ул. Строителей, 15</p>
+			<ul>
+				<li>Доставка</li>
+				<li>Гарантия</li>
+				<li>Контакты</li>
+			</ul>
+			<p>Тел.: +7 (495) 495-95-95</p>
+			<section class="footer-social">
+				<a class="social-btn fb-btn" href="https://facebook.com">Фейсбук</a>
+				<a class="social-btn inst-btn" href="https://instagram.com">Инстаграм</a>
+				<a class="social-btn twit-btn" href="https://twitter.com">Твиттер</a>
+			</section>
+			<a class="htmlacademy-btn" href="https://htmlacademy.ru/intensive/htmlcss">base-html-css</a>
+		</footer>
+	</body>
 </html>
