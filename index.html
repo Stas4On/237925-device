@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="header-top">
-        <a href="#" class="logo logo-header">Device</a>
+        <a href="#" class="logo">Device</a>
         <form name="find-form" method="post" action="https://echo.htmlacademy.ru">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="text" id="search" placeholder="Поиск по сайту">
-          <button type="submit" value="find">Найти</button>
+          <input class="search-string" type="text" id="search" placeholder="Поиск по сайту">
+          <button class="btn-search" type="submit" value="search">Найти</button>
         </form>
-        <div class="header-function">
+        <section class="user-menu">
           <a href="#" class="enter">Войти</a>
           <a href="#" class="compare">Сравнить</a>
           <a href="#" class="cart">Корзина</a>
-        </div>
+        </section>
       </div>
       <nav>
-        <ul>
+        <ul class="main-nav">
           <li>
             <a href="#">Каталог товаров</a>
             <ul class="drop-down-menu">
@@ -61,7 +62,7 @@
             Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
           <a href="#" class="btn">Подробнее</a>
-          <table>
+          <table class="features-item">
             <tr>
               <th>8,5 м</th>
               <th>5 кг</th>
@@ -84,7 +85,7 @@
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
           <a href="#" class="btn">Подробнее</a>
-          <table>
+          <table class="features-item">
             <tr>
               <th>48 часов</th>
             </tr>
@@ -103,7 +104,7 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
           <a href="#" class="btn">Подробнее</a>
-          <table>
+          <table class="features-item">
             <tr>
               <th>800 м</th>
               <th>50 м</th>
@@ -117,7 +118,7 @@
       </section>
       <section class="popular">
         <h2 class="visually-hidden">Группы популярных товаров</h2>
-        <ul>
+        <ul class="popular-icon">
           <li class="item virt-real"><a href="#">Виртуальная реальность</a></li>
           <li class="item monopods"><a href="catalog.html">Моноподы для селфи</a></li>
           <li class="item action-cam"><a href="#">Экшн-камеры</a></li>
@@ -128,10 +129,10 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul>
-          <li><button class="delivery btn">Доставка</button></li>
-          <li><button class="warranty btn">Гарантия</button></li>
-          <li><button class="credit btn">Кредит</button></li>
+        <ul class="slide-toggle">
+          <li><button class="btn">Доставка</button></li>
+          <li><button class="btn">Гарантия</button></li>
+          <li><button class="btn">Кредит</button></li>
         </ul>
         <div class="advanteges-slider">
           <div class="shipping-slide">
@@ -169,6 +170,11 @@
         <p>
           Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
         </p>
+        <ul class="delivery-service">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
         <a href="#" class="btn">Подробнее о нас</a>
       </section>
       <section class="contact">
@@ -182,18 +188,20 @@
     </main>
     <footer class="main-footer">
       <a href="#" class="logo logo-footer">Device</a>
-      <div class="footer-function">
+      <section class="footer-user-menu">
         <a href="#" class="enter">Войти</a>
         <a href="#" class="compare">Сравнить</a>
         <a href="#" class="cart">Корзина</a>
+      </section>
+      <div class="footer-middle">
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-info">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-info">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <p>Тел.: +7 (495) 495-95-95</p>
       <section>
         <h2 class="visually-hidden">Наши страницы в соцсетях</h2>
         <ul class="footer-social">
@@ -214,12 +222,12 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form name="write-us" method="post" action="https://echo.htmlacademy.ru">
         <label for="write-us-first-name">Ваше имя:</label>
-        <input type="text" id="write-us-first-name" placeholder="Представьтесь, пожалуйста">
+        <input class="form-field" type="text" id="write-us-first-name" placeholder="Представьтесь, пожалуйста">
         <label for="write-us-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="write-us-email" placeholder="Для отправки ответа">
+        <input class="form-field email" type="email" name="email" id="write-us-email" placeholder="Для отправки ответа">
         <label for="write-us-lettet">Текст письма:</label>
-        <textarea name="letter" id="write-us-lettet" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        <button type="submit" value="send">Отправить</button>
+        <textarea class="text-area" name="letter" id="write-us-lettet" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <button class="btn form-btn" type="submit" value="send">Отправить</button>
         <button type="button" class="modal-close">Закрыть</button>
       </form>
     </section>
