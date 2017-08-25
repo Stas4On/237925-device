@@ -1,16 +1,25 @@
 @font-face {
-    font-family: 'gilroyextrabold';
+    font-family: 'Gilroy';
     src: url('../font/gilroy-extrabold-webfont.woff2') format('woff2'),
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'gilroylight';
+    font-family: 'Gilroy';
     src: url('../font/gilroy-light-webfont.woff2') format('woff2'),
     font-weight: normal;
     font-style: normal;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -227,17 +236,94 @@ a {
 }
 
 .btn {
-  /* width: 220px;
-  height: 40px; */
-  background-color: #f0c52e;
+  position: relative;
+  height: 40px;
+}
+
+.products-slider .btn {
+  width: 220px;
+  padding: 9px 42px;
+}
+
+.slide-toggle .btn {
+  width: 160px;
+
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.slide-toggle .btn:active {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.info .btn,
+.contact .btn {
+  width: 220px;
+  padding: 9px 40px;
+}
+
+.info .btn {
+  padding: 9px 21px;
+}
+
+
+.form-btn {
+  width: 200px;
+
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .btn:hover {
-
+  background-color: #f0c52e;
 }
 
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.slide-toggle .btn:before,
+.products-slider .btn::before,
+.info .btn::before,
+.contact .btn::before,
+.form-btn::before {
+  content: "";
+
+  position: absolute;
+  width: 160px;
+  height: 8px;
+  top: 16px;
+  left: 0;
+  z-index: -1;
+
+  background-color: #f0c52e;
+}
+.products-slider .btn::before {
+  width: 220px;
+}
+.info .btn::before,
+.contact .btn::before {
+  width: 260px;
+}
+
+.form-btn:before {
+  width: 200px;
+}
+ .slide-toggle .btn:active::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 160px;
+  bottom: 0px;
+  width: 118px;
+  height: 40px;
+  background-color: #000000;
+  text-align: center;
 }
 
 .slide-number {
@@ -262,40 +348,6 @@ a {
 .features-item tr {
   color:#000000;
 }
-
-.advantages {
-  background-color: #e5e5e5;
-}
-
-.slide-toggle .btn {
-  width: 160px;
-  height: 40px;
-
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
-
-.slide-toggle .btn:hover {
-
-}
-
-.slide-toggle .btn:active {
-  color: #f7e184;
-  background-color: #000000;
-}
-
-/* .slide-toggle .btn:active::after {
-  content: " ";
-  display: block;
-  position: relative;
-  left: 150px;
-  bottom: 23px;
-  width: 118px;
-  height: 40px;
-  background-color: #000000;
-  text-align: center;
-} */
 
 .logotypes a {
   filter:
@@ -346,15 +398,6 @@ a {
 
 .footer-user-menu a:active {
   opacity: 0.3;
-}
-
-.form-btn {
-  width: 200px;
-  height: 40px;
-
-  border: none;
-  box-shadow: none;
-  outline: none;
 }
 
 .sort a {
@@ -425,11 +468,10 @@ a {
   background-color: #ebebeb;
 }
 
-.modal-write-us .form-field:active,
-.modal-write-us .text-area:active {
+.modal-write-us .form-field:focus,
+.modal-write-us .text-area:focus {
   border: 2px solid #f7e296;
   background-color: #ffffff;
-  box-sizing: content-box;
 }
 
 .modal-write-us label {
