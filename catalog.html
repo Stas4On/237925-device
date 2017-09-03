@@ -5,7 +5,6 @@
     <title>Каталог товаров</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="outline.css">
   </head>
   <body>
     <header class="main-header">
@@ -96,23 +95,44 @@
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
-              <input type="checkbox" name="color" id="black">
-              <label for="black">Чёрный</label>
-              <input type="checkbox" name="color" id="white">
-              <label for="white">Белый</label>
-              <input type="checkbox" name="color" id="blue">
-              <label for="blue">Синий</label>
-              <input type="checkbox" name="color" id="red">
-              <label for="red">Красный</label>
-              <input type="checkbox" name="color" id="pink">
-              <label for="pink">Розовый</label>
+              <label class="color-checkbox" for="black">
+                <input type="checkbox" name="color" id="black">
+                <span class="checkbox-indicator"></span>
+                Чёрный
+              </label>
+              <label class="color-checkbox" for="white">
+                <input type="checkbox" name="color" id="white">
+                <span class="checkbox-indicator"></span>
+                Белый
+              </label>
+              <label class="color-checkbox" for="blue">
+                <input type="checkbox" name="color" id="blue">
+                <span class="checkbox-indicator"></span>
+                Синий
+              </label>
+              <label class="color-checkbox" for="red">
+                <input type="checkbox" name="color" id="red">
+                <span class="checkbox-indicator"></span>
+                Красный
+              </label>
+              <label class="color-checkbox" for="pink">
+                <input type="checkbox" name="color" id="pink">
+                <span class="checkbox-indicator"></span>
+                Розовый
+              </label>
             </fieldset>
             <fieldset>
               <legend>Bluetooth</legend>
-              <input type="radio" name="bluetooth" id="bluetooth-on" value="blue-on" checked>
-              <label for="bluetooth-on">Есть</label>
-              <input type="radio" name="bluetooth" id="bluetooth-off"  value="blue-off">
-              <label for="bluetooth-off">Нет</label>
+              <label class="bluetooth-radio" for="bluetooth-on">
+                <input type="radio" name="bluetooth" id="bluetooth-on" value="blue-on" checked>
+                <span class="radio-indicator"></span>
+                Есть
+              </label>
+              <label class="bluetooth-radio">
+                <input type="radio" name="bluetooth" id="bluetooth-off"  value="blue-off">
+                <span class="radio-indicator"></span>
+                Нет
+              </label>
             </fieldset>
             <button class="btn form-btn" type="submit" >Показать</button>
           </form>
@@ -122,34 +142,50 @@
             <h2 class="visually-hidden">Выбор селфи-палки</h2>
             <article class="product-item">
               <a class="product-link" href="#"><img src="img/item-1.jpg" alt="Селфи-палка для любителя" width="360" height="380"></a>
-              <h1>Любительская селфи-палка</h1>
-              <span>500 руб.</span>
+              <div class="product-hidden-link">
+                <a class="btn" href="#">В корзину</a>
+                <a class="link-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <h1>Любительская селфи-палка</h1><!--
+              --><span class="cost">500 руб.</span>
             </article>
             <article class="product-item">
               <a class="product-link" href="#"><img src="img/item-2.jpg" alt="Селфи-палка для профессионала" width="360" height="380"></a>
-              <h1>Профессиональная селфи-палка </h1>
-              <span>1 500 руб.</span>
+              <div class="product-hidden-link">
+                <a class="btn" href="#">В корзину</a>
+                <a class="link-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <h1>Профессиональная селфи-палка </h1><!--
+              --><span class="cost">1 500 руб.</span>
             </article>
             <article class="product-item">
               <a class="product-link" href="#"><img src="img/item-3.jpg" alt="Селфи-палка, которая не тонет" width="360" height="380"></a>
-              <h1>Непотопляемая селфи-палка</h1>
-              <span>2 500 руб.</span>
+              <div class="product-hidden-link">
+                <a class="btn" href="#">В корзину</a>
+                <a class="link-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <h1>Непотопляемая селфи-палка</h1><!--
+              --><span class="cost">2 500 руб.</span>
             </article>
             <article class="product-item">
               <a class="product-link" href="#"><img src="img/item-4.jpg" alt="Лучшая селфи-палка - топовая селфи-палка" width="360" height="380"></a>
-              <h1>Селфи-палка «Следуй за мной»</h1>
-              <span>4 900 руб.</span>
+              <div class="product-hidden-link">
+                <a class="btn" href="#">В корзину</a>
+                <a class="link-to-compare" href="#">Добавить к сравнению</a>
+              </div>
+              <h1>Селфи-палка «Следуй за мной»</h1><!--
+              --><span class="cost">4 900 руб.</span>
             </article>
           </section>
-            <ul class="navigation">
-              <li><a href="#">Назад</a></li>
-              <ol>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-              </ol>
-              <li><a href="#">Вперед</a></li>
-            </ul>
+          <ul class="navigation">
+            <li><a href="#">Назад</a></li>
+            <ol class="number-list">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ol>
+            <li><a href="#">Вперед</a></li>
+          </ul>
         </div>
       </div>
     </main>

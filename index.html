@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="outline.css">
   </head>
   <body>
     <header class="main-header">
@@ -247,12 +246,20 @@
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form name="write-us" method="post" action="https://echo.htmlacademy.ru">
-        <label for="write-us-first-name">Ваше имя:</label>
-        <input class="form-field" type="text" id="write-us-first-name" placeholder="Представьтесь, пожалуйста">
-        <label for="write-us-email">Ваш e-mail:</label>
-        <input class="form-field email" type="email" name="email" id="write-us-email" placeholder="Для отправки ответа">
-        <label for="write-us-lettet">Текст письма:</label>
-        <textarea class="text-area" name="letter" id="write-us-lettet" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <div class="write-us-container">
+          <p>
+            <label for="write-us-first-name">Ваше имя:</label>
+            <input class="form-field" type="text" id="write-us-first-name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+            <label for="write-us-email">Ваш e-mail:</label>
+            <input class="form-field email" type="email" name="email" id="write-us-email" placeholder="Для отправки ответа">
+          </p>
+        </div>
+        <p>
+          <label for="write-us-lettet">Текст письма:</label>
+          <textarea class="text-area" name="letter" id="write-us-lettet" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="btn form-btn" type="submit" value="send">Отправить</button>
         <button type="button" class="modal-close">Закрыть</button>
       </form>
