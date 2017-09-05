@@ -89,11 +89,26 @@
         <aside class="filter">
           <h3 class="visually-hidden">Фильтр</h3>
           <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="choice-cost">
               <legend>Стоимость</legend>
-              <input type="range" name="cost" id="cost" min="100" max="10000" step="100">
+              <div class="range-cost">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
+                  </div>
+                </div>
+                <div class="price-control">
+                  <label for="min-price">от
+                    <input class="min-price" name="min-price" type="text" value="0">
+                  </label>
+                  <label for="max-price">до
+                    <input class="max-price" name="max-price" type="text" value="5000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="choice-of-color">
               <legend>Цвет</legend>
               <label class="color-checkbox" for="black">
                 <input type="checkbox" name="color" id="black">
@@ -121,7 +136,7 @@
                 Розовый
               </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="choice-bluetooth">
               <legend>Bluetooth</legend>
               <label class="bluetooth-radio" for="bluetooth-on">
                 <input type="radio" name="bluetooth" id="bluetooth-on" value="blue-on" checked>
@@ -134,7 +149,7 @@
                 Нет
               </label>
             </fieldset>
-            <button class="btn form-btn" type="submit" >Показать</button>
+            <button class="btn form-btn" type="submit"><span>Показать</span></button>
           </form>
         </aside>
         <div class="product-container">
@@ -146,8 +161,10 @@
                 <a class="btn" href="#">В корзину</a>
                 <a class="link-to-compare" href="#">Добавить к сравнению</a>
               </div>
-              <h1>Любительская селфи-палка</h1><!--
-              --><span class="cost">500 руб.</span>
+              <div class="cost-block">
+                <h1>Любительская селфи-палка</h1>
+                <span class="cost">500 руб.</span>
+              </div>
             </article>
             <article class="product-item">
               <a class="product-link" href="#"><img src="img/item-2.jpg" alt="Селфи-палка для профессионала" width="360" height="380"></a>
@@ -155,8 +172,10 @@
                 <a class="btn" href="#">В корзину</a>
                 <a class="link-to-compare" href="#">Добавить к сравнению</a>
               </div>
-              <h1>Профессиональная селфи-палка </h1><!--
-              --><span class="cost">1 500 руб.</span>
+              <div class="cost-block">
+                <h1>Профессиональная селфи-палка </h1>
+                <span class="cost">1 500 руб.</span>
+              </div>
             </article>
             <article class="product-item">
               <a class="product-link" href="#"><img src="img/item-3.jpg" alt="Селфи-палка, которая не тонет" width="360" height="380"></a>
@@ -164,8 +183,10 @@
                 <a class="btn" href="#">В корзину</a>
                 <a class="link-to-compare" href="#">Добавить к сравнению</a>
               </div>
-              <h1>Непотопляемая селфи-палка</h1><!--
-              --><span class="cost">2 500 руб.</span>
+              <div class="cost-block">
+                <h1>Непотопляемая селфи-палка</h1>
+                <span class="cost">2 500 руб.</span>
+              </div>
             </article>
             <article class="product-item">
               <a class="product-link" href="#"><img src="img/item-4.jpg" alt="Лучшая селфи-палка - топовая селфи-палка" width="360" height="380"></a>
@@ -173,8 +194,10 @@
                 <a class="btn" href="#">В корзину</a>
                 <a class="link-to-compare" href="#">Добавить к сравнению</a>
               </div>
-              <h1>Селфи-палка «Следуй за мной»</h1><!--
-              --><span class="cost">4 900 руб.</span>
+              <div class="cost-block">
+                <h1>Селфи-палка «Следуй за мной»</h1>
+                <span class="cost">4 900 руб.</span>
+              </div>
             </article>
           </section>
           <ul class="navigation">
