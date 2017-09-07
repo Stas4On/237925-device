@@ -53,13 +53,13 @@
     <main class="main-block">
         <section class="products-slider">
           <h2 class="visually-hidden">Слайдер с популярными товарами</h2>
+          <input class="radio-1" type="radio" id="radio-1" name="toggle" checked>
+          <input class="radio-2" type="radio" id="radio-2" name="toggle">
+          <input class="radio-3" type="radio" id="radio-3" name="toggle">
           <div class="slider-controls">
-            <input type="radio" id="radio-1" name="toggle" checked>
-            <input type="radio" id="radio-2" name="toggle">
-            <input type="radio" id="radio-3" name="toggle">
-            <label for="radio-1" class="visually-hidden">Выбор первого слайда</label>
-            <label for="radio-2" class="visually-hidden">Выбор второго слайда</label>
-            <label for="radio-3" class="visually-hidden">Выбор третьего слайда</label>
+            <label for="radio-1" class="radio-btn">Выбор первого слайда</label>
+            <label for="radio-2" class="radio-btn">Выбор второго слайда</label>
+            <label for="radio-3" class="radio-btn">Выбор третьего слайда</label>
           </div>
           <div class="slide first-slide">
             <span class="slide-number">01</span>
@@ -145,10 +145,13 @@
       <div class="back-container">
         <section class="advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
+          <input class="adv-radio-1" type="radio" id="slide-radio-1" name="slide-toggle" checked>
+          <input class="adv-radio-2" type="radio" id="slide-radio-2" name="slide-toggle">
+          <input class="adv-radio-3" type="radio" id="slide-radio-3" name="slide-toggle">
           <ul class="slide-toggle">
-            <li><button class="btn">Доставка</button></li>
-            <li><button class="btn">Гарантия</button></li>
-            <li><button class="btn">Кредит</button></li>
+            <li><label class="btn" for="slide-radio-1">Доставка</label></li>
+            <li><label class="btn" for="slide-radio-2">Гарантия</label></li>
+            <li><label class="btn" for="slide-radio-3">Кредит</label></li>
           </ul>
           <div class="advanteges-slider">
             <div class="slide shipping-slide">
@@ -201,7 +204,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <a class="map-link" href="#"><img src="img/map.jpg" alt="Открыть карту" width="560" height="222"></a>
-          <a href="#" class="btn">Напишите нам</a>
+          <a href="#" class="btn write-us-btn">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -249,7 +252,7 @@
         <div class="write-us-container">
           <p>
             <label for="write-us-first-name">Ваше имя:</label>
-            <input class="form-field" type="text" id="write-us-first-name" placeholder="Представьтесь, пожалуйста">
+            <input class="form-field" type="text" name="first-name" id="write-us-first-name" placeholder="Представьтесь, пожалуйста">
           </p>
           <p>
             <label for="write-us-email">Ваш e-mail:</label>
@@ -258,7 +261,7 @@
         </div>
         <p>
           <label for="write-us-lettet">Текст письма:</label>
-          <textarea class="text-area" name="letter" id="write-us-lettet" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          <textarea class="text-area" name="letter" id="write-us-lettet" cols="30" rows="10" placeholder="В свободной форме" value="lncklzxc"></textarea>
         </p>
         <button class="btn popup-form-btn" type="submit" value="send">Отправить</button>
         <button type="button" class="modal-close">Закрыть</button>
@@ -266,7 +269,9 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBUbEOW4wB" width="960" height="560" frameborder="0"></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <script src="js/popup.js"></script>
   </body>
 </html>
