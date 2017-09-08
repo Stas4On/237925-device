@@ -261,7 +261,7 @@ img {
 }
 
 .compare {
-  margin-right: 37px;
+  margin-right: 35px;
   margin-left: auto;
 }
 
@@ -630,6 +630,35 @@ img {
   width: 360px;
   margin-top: 15px;
   margin-bottom: 35px;
+}
+
+.product .product-item:nth-child(3)::before {
+  content: "new";
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  vertical-align: middle;
+  letter-spacing: 0.05em;
+}
+
+.product .product-item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  opacity: 0.2;
 }
 
 .product-item h1 {
@@ -1048,7 +1077,7 @@ img {
 }
 
 
-.popular-icon li::before {
+.popular-icon .item::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1188,7 +1217,7 @@ img {
 
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
   padding: 0 20px;
 
   -webkit-box-pack: justify;
@@ -1350,7 +1379,7 @@ img {
 
 .footer-user-menu {
   width: 360px;
-
+  text-align: right;
   white-space: nowrap;
 }
 
@@ -1807,6 +1836,10 @@ img {
   margin-right: 5px;
 
   opacity: 1;
+}
+
+.footer-user-menu svg:first-child {
+  margin-right: 8px;
 }
 
 .footer-user-menu a:hover > svg {
