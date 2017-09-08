@@ -1655,6 +1655,7 @@ img {
 
 .popup-form-btn {
   width: 200px;
+  padding-top: 0;
 
   border: none;
   outline: none;
