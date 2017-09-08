@@ -633,32 +633,39 @@ img {
 }
 
 .product .product-item:nth-child(3)::before {
-  content: "new";
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  width: 60px;
-  height: 60px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 17px;
+
+  position: absolute;
+  top: 55px;
+  right: 15px;
+
+  width: 60px;
+  height: 60px;
+
+  content: "new";
   vertical-align: middle;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .product .product-item:nth-child(3)::after {
-  content: "";
   position: absolute;
   top: 30px;
   right: 27px;
+
   width: 60px;
   height: 60px;
-  border: 2px solid #000;
-  border-radius: 50%;
+
+  content: "";
+
   opacity: 0.2;
+  border: 2px solid #000000;
+  border-radius: 50%;
 }
 
 .product-item h1 {
@@ -764,6 +771,10 @@ img {
 
 .product-hidden-link .btn {
   display: block;
+
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
 }
 
 .product-hidden-link .btn:active {
@@ -773,7 +784,6 @@ img {
 .product-hidden-link .btn::before {
   position: absolute;
   z-index: -1;
-  top: 7px;
   left: 0;
 
   width: 200px;
@@ -881,7 +891,7 @@ img {
 
 .products-slider .slider-controls {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   right: 100px;
   bottom: 140px;
 
@@ -995,15 +1005,13 @@ img {
 }
 
 .wrap-content p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .wrap-content .btn {
   display: inline-block;
 
-  margin-bottom: 45px;
-
-  vertical-align: middle;
+  margin-bottom: 55px;
 }
 
 .features-item th {
@@ -1045,6 +1053,8 @@ img {
   display: -ms-flexbox;
   display: flex;
 
+  width: 1200px;
+  margin: 0 auto;
   margin-bottom: 25px;
 
   -webkit-box-align: center;
@@ -1202,6 +1212,9 @@ img {
   margin: 0 auto;
   margin-bottom: 85px;
 
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
@@ -1217,7 +1230,7 @@ img {
 
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 68px;
+  margin-bottom: 77px;
   padding: 0 20px;
 
   -webkit-box-pack: justify;
@@ -1361,8 +1374,8 @@ img {
 }
 
 .footer-info {
-  max-width: 780px;
-  margin-left: -10px;
+  max-width: 500px;
+  margin-right: 10px;
 }
 
 .footer-info li {
@@ -1373,14 +1386,10 @@ img {
   vertical-align: baseline;
 }
 
-.footer-info li:not(:first-child) {
-  margin-left: -4px;
-}
-
 .footer-user-menu {
   width: 360px;
+
   text-align: right;
-  white-space: nowrap;
 }
 
 .footer-user-menu .enter {
@@ -1567,12 +1576,15 @@ img {
   display: inline-block;
 
   min-height: 40px;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+
+  text-align: center;
 }
 
 .products-slider .btn {
   width: 220px;
-
-  text-align: center;
 }
 
 .slide-toggle {
@@ -1613,11 +1625,7 @@ img {
   display: inline-flex;
 
   width: 160px;
-  padding: 0;
 
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1631,14 +1639,12 @@ img {
 .info .btn,
 .contact .btn {
   width: 260px;
-
-  text-align: center;
-  vertical-align: middle;
 }
 
 .form-btn {
   width: 100%;
   margin-top: 32px;
+  padding-top: 0;
 
   border: none;
   outline: none;
@@ -1676,10 +1682,11 @@ img {
 .info .btn::before,
 .contact .btn::before,
 .form-btn::before,
-.popup-form-btn:before {
+.popup-form-btn:before,
+.product-hidden-link .btn::before {
   position: absolute;
   z-index: -1;
-  top: 8px;
+  top: 50%;
   left: 0;
 
   width: 100%;
@@ -1689,18 +1696,15 @@ img {
   -webkit-transition: all 0.3s ease-out;
        -o-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 
   background-color: #f0c52e;
 }
 
-.slide-toggle .btn:before,
-.popup-form-btn:before {
-  top: 16px;
-}
-
 .form-btn::before {
   z-index: 0;
-  top: 16px;
 }
 
 .slide-toggle .btn:hover::before,
@@ -1713,9 +1717,9 @@ img {
   height: 100%;
   /*transform: scaleY(5);*/
 
-  -webkit-transform: translateY(-16px);
-      -ms-transform: translateY(-16px);
-          transform: translateY(-16px);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .slide-toggle .btn:active::after {
@@ -1775,7 +1779,7 @@ img {
 }
 
 .delivery-service {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   padding-top: 5px;
   padding-left: 20px;
 }
@@ -1796,7 +1800,7 @@ img {
 .map-link {
   display: inline-block;
 
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   padding-top: 7px;
 }
 

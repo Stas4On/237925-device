@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -15,7 +15,7 @@
               <form class="find-form" name="find-form" method="post" action="https://echo.htmlacademy.ru">
                 <label for="search" class="visually-hidden">Поиск по сайту</label>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg>
-                <input class="search-string" type="text" id="search" placeholder="Поиск по сайту">
+                <input class="search-string" type="text" name="search" id="search" placeholder="Поиск по сайту">
                 <button class="btn-search" type="submit" value="search">Найти</button>
               </form>
           <section class="user-menu">
@@ -212,7 +212,7 @@
       <div class="container">
         <div class="footer-top">
           <p>
-            <a href="#" class="logo logo-footer">Device</a>
+            <a href="index.html" class="logo logo-footer">Device</a>
           </p>
           <section class="footer-user-menu">
             <a href="#" class="enter"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a>
@@ -230,18 +230,17 @@
           <p>Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer-bottom">
-            <h2 class="visually-hidden">Наши страницы в соцсетях</h2>
-            <ul class="footer-social">
-              <li>
-                <a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
-              </li>
-              <li>
-                <a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
-              </li>
-              <li>
-                <a class="social-btn social-btn-twit" href="https://twitter.com">Твиттер</a>
-              </li>
-            </ul>
+          <ul class="footer-social">
+            <li>
+              <a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-twit" href="https://twitter.com">Твиттер</a>
+            </li>
+          </ul>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">Базовый интенсив htmlacademy</a>
         </div>
       </div>
@@ -272,6 +271,6 @@
       <iframe src="https://yandex.ru/map-widget/v1/-/CBUbEOW4wB" width="960" height="560" frameborder="0"></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.min.js"></script>
   </body>
 </html>
