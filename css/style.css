@@ -142,7 +142,7 @@ img {
   line-height: 56px;
 
   display: inline-block;
-
+  vertical-align: baseline;
   margin-top: 12px;
   margin-bottom: 5px;
   margin-left: -4px;
@@ -368,6 +368,7 @@ img {
 
 .drop-down-menu > li {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .drop-down-menu ul {
@@ -453,7 +454,7 @@ img {
 .choice-of-color label,
 .choice-bluetooth label {
   display: inline-block;
-
+  vertical-align: baseline;
   width: 100%;
 }
 
@@ -499,6 +500,11 @@ img {
           box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
+.range-controls .toggle:active {
+  top: -9px;
+  border-width: 9px;
+}
+
 .choice-cost label {
   font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 14px;
@@ -542,9 +548,34 @@ img {
   background-color: #000000;
 }
 
-.filter-form input[type="checkbox"],
-.filter-form input[type="radio"] {
-  display: none;
+.filter-form input[type="checkbox"]:focus + .checkbox-indicator,
+.filter-form input[type="radio"]:focus + .radio-indicator {
+  opacity: 0.6;
+}
+
+.filter-form input[type="checkbox"]:hover + .checkbox-indicator,
+.filter-form input[type="radio"]:hover + .radio-indicator {
+  opacity: 0.6;
+}
+
+.filter-form input[type="checkbox"]:active + .checkbox-indicator {
+  opacity: 1;
+  background: url(../img/checkbox-on.svg) no-repeat left;
+}
+
+.filter-form input[type="checkbox"]:active:checked + .checkbox-indicator {
+  opacity: 1;
+  background: url(../img/checkbox-off.svg) no-repeat left;
+}
+
+.filter-form input[type="radio"]:active + .radio-indicator {
+  opacity: 1;
+  background: url(../img/radio-on.svg) no-repeat left;
+}
+
+.filter-form input[type="radio"]:active:checked + .radio-indicator {
+  opacity: 1;
+  background: url(../img/radio-off.svg) no-repeat left;
 }
 
 .color-checkbox,
@@ -836,6 +867,7 @@ img {
 
 .navigation li {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .navigation a {
@@ -845,7 +877,7 @@ img {
   line-height: 16px;
 
   display: inline-block;
-
+  vertical-align: baseline;
   padding: 30px 25px 25px 30px;
 
   letter-spacing: 0.2em;
@@ -915,7 +947,7 @@ img {
   width: 15px;
   height: 15px;
   margin-left: 15px;
-
+  vertical-align: baseline;
   cursor: pointer;
 
   background: #ffffff url(../img/slider-button-empty.svg) no-repeat center bottom;
@@ -1009,13 +1041,13 @@ img {
 }
 
 .wrap-content p {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .wrap-content .btn {
   display: inline-block;
-
-  margin-bottom: 55px;
+  vertical-align: baseline;
+  margin-bottom: 50px;
 }
 
 .features-item th {
@@ -1433,6 +1465,7 @@ img {
   position: relative;
 
   display: inline-block;
+  vertical-align: baseline;
 
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -1552,7 +1585,7 @@ img {
   opacity: 0.3;
 }
 
-.drop-down-menu li {
+.column-menu li {
   margin-bottom: 10px;
 }
 
@@ -1583,7 +1616,7 @@ img {
   margin: 0;
   padding: 0;
   padding-top: 8px;
-
+  vertical-align: baseline;
   text-align: center;
 }
 
@@ -1755,7 +1788,7 @@ img {
   right: 30px;
 
   display: inline-block;
-
+  vertical-align: baseline;
   width: 200px;
   height: 200px;
 
@@ -1879,7 +1912,7 @@ img {
 
 .sort-container span {
   display: inline-block;
-
+  vertical-align: baseline;
   width: 350px;
   padding-left: 80px;
 }
@@ -1943,7 +1976,7 @@ img {
 
 .additional-sort-list li {
   display: inline-block;
-
+  vertical-align: baseline;
   padding-right: 12px;
 }
 
@@ -1951,6 +1984,7 @@ img {
   font-size: 0;
 
   display: inline-block;
+  vertical-align: baseline;
 
   width: 14px;
   height: 12px;
@@ -1973,7 +2007,7 @@ img {
   position: relative;
 
   display: inline-block;
-
+  vertical-align: baseline;
   padding-left: 30px;
 }
 
