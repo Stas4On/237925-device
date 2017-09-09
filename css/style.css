@@ -366,6 +366,10 @@ img {
   display: inline-block;
 }
 
+.drop-down-menu > li {
+  display: inline-block;
+}
+
 .drop-down-menu ul {
   display: inline-block;
 

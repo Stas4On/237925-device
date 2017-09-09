@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -29,18 +29,24 @@
               <li class="catalog">
                 <a class="catalog-link" href="#">Каталог товаров<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a>
                 <ul class="drop-down-menu">
-                  <ul>
-                    <li><a href="#">Виртуальная реальность</a></li>
-                    <li><a href="catalog.html">Моноподы для селфи</a></li>
-                    <li><a href="#">Экшн-камеры</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="#">Фитнес-браслеты</a></li>
-                    <li><a href="#">Умные часы</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="#">Квадрокоптеры</a></li>
-                  </ul>
+                  <li>
+                    <ul>
+                      <li><a href="#">Виртуальная реальность</a></li>
+                      <li><a href="catalog.html">Моноподы для селфи</a></li>
+                      <li><a href="#">Экшн-камеры</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li><a href="#">Фитнес-браслеты</a></li>
+                      <li><a href="#">Умные часы</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li><a href="#">Квадрокоптеры</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li class="delivery"><a href="#">Доставка</a></li>
@@ -99,10 +105,10 @@
                   </div>
                 </div>
                 <div class="price-control">
-                  <label for="min-price">от
+                  <label>от
                     <input class="min-price" name="min-price" type="text" value="0">
                   </label>
-                  <label for="max-price">до
+                  <label>до
                     <input class="max-price" name="max-price" type="text" value="5000">
                   </label>
                 </div>
@@ -202,11 +208,13 @@
           </section>
           <ul class="navigation">
             <li><a href="#">Назад</a></li>
-            <ol class="number-list">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ol>
+            <li>
+              <ol class="number-list">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ol>
+            </li>
             <li><a href="#">Вперед</a></li>
           </ul>
         </div>
